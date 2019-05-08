@@ -168,12 +168,12 @@ def render(img, color_samples):
 if __name__ == "__main__":
     warnings.simplefilter("ignore")
 
-    img = imread("Planet.jpg")[:, :, :3]
+    img = imread("Liverpool1.jpg")[:, :, :3]
 
     print("Calibrating...")
     mult = 1.02 * 500 / len(poisson_disc(img, 500))
 
-    for n in range(7000, 7001):
+    for n in range(700, 701):
         print("Sampling {} for size {}.".format("Planet.jpg", n))
 
         sample_points = poisson_disc(img, mult * n)
