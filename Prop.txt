@@ -1,0 +1,36 @@
+Genetischer Algorithmus erzeugt Animation
+
+Kurzbeschreibung:
+Genetische Algorithmen wurden in der Vorlesung benutzt um gute Lösungen zu finden, wenn das ausprobieren aller Möglichkeiten zu aufwendig wäre. Wir wollen einen genetischen Algorithmus benutzen um eine Animation zu erzeugen. So soll z.B. das (neue) Logo der Universität Bielefeld aus einer zufälligen Anordnung von Punkten erzeugt werden. Mit jedem zeitlichen Schritt werden genetische Methoden auf die Population angewandt um möglichst nah an das gewünschte Logo zu kommen. Dafür wird eine Zielfunktion benötigt, die eine Distanz zwischen dem Ziel und einem Zustand ausrechnet. Mit genügend Zeitschritten sollte es Exemplare in der Population geben die dem Logo sehr ähneln und dessen Zustände zu allen Zeitpunkten kann animiert werden.
+
+Input: Logo, Ziel
+Output: Eine Animation
+
+Quellen Literatur: zu high
+
+Bezug:
+- Unit 50: Logo, Bild
+- Datenerfordernisse: nur ein Bild des Zieles
+- algorithmische Aspekte: Benutzung genetischer Algorithmen, ausprobieren von unterschiedlichen Mutationen
+
+Varianten: unterschiedliche Zielfunktionen, genetische Methoden
+Präsentationsaspekte: Erklärung genetischer Algorithmen anhand der Animation
+
+Vorgehen:
+- Datenstruktur für die Bilder bauen (z.B. Matrix)
+- Bilder in diese Datenstruktur exportieren
+- Distanzen zwischen den Datenstrukturen ausrechnen
+- Genetische Algorithmen programmieren
+- Aus den Zuständen über alle Zustände T eine Animation machen
+
+
+Zu lösende Probleme:
+- Wie kann man die Distanz zwischen zwei Bildern berechnen
+- Wie kann man in Python gut die Übergange zwischen Matritzen animieren
+
+
+
+
+
+
+
