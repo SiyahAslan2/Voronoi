@@ -112,6 +112,35 @@ def poisson_disc(img, n, k=30):
 
     return sample_points
 
+"""def poisson_disc(img, n):
+    h, w = img.shape[:2]
+    max_dist = min(h, w) / 4
+    min_dist = min(h, w) / 24
+    n = 1000 # auch das n unten einstellen
+    erster_punkt = (np.random.uniform(0, h), np.random.uniform(0, w))
+    sample_points = [erster_punkt]
+    radius = min_dist
+    for _ in range(1000):
+        while len(sample_points) < n:
+            neuer_punkt = (np.random.uniform(0, h), np.random.uniform(0, w))
+            if (-radius) < sum(erster_punkt) - sum(neuer_punkt) < radius : # einfache Formel
+                pass
+            else:
+                sample_points.append(neuer_punkt)
+        try:
+            for i in range(len(sample_points)):
+                for k in range(len(sample_points)):
+                    if (-radius) < sum(sample_points[k]) - sum(sample_points[i]) < radius:
+                        sample_points.remove(zulässige_punkte[i])
+                    else:
+                         pass
+        except:
+            pass
+        
+        if len(sample_points) >= 990: # umstellen wenn range geändert wird
+            break
+    
+    return sample_points"""
 
 def sample_colors(img, sample_points, n):
     h, w = img.shape[:2]
